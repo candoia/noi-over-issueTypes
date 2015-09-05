@@ -1,0 +1,7 @@
+{
+  "name": "NOI_per_IssueType",
+  "version": "0.0.1",
+  "author": "Nitin Mukesh Tiwari",
+  "description": "Displays the number of issues per type as a pie chart.",
+  "main": "main.html"
+}

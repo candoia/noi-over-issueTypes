@@ -1,0 +1,46 @@
+# Bugs with WontFix issues
+
+p: Project = input;
+issuesCount:output sum[string] of int;
+
+
+visit(p, visitor {
+	before ir : Issue -> {
+	if((ir.kind == IssueKind.WONTFIX)){
+		issuesCount["WontFix"]<<1;
+	}
+
+	if((ir.kind == IssueKind.INVALID)){
+		issuesCount["Invalid"]<<1;
+	}
+	if((ir.kind == IssueKind.UNKNOWN)){
+		issuesCount["unknown"]<<1;
+	}
+	if((ir.kind == IssueKind.BUG)){
+		issuesCount["Bug"]<<1;
+	}
+	if((ir.kind == IssueKind.DUPLICATE)){
+		issuesCount["Duplicate"]<<1;
+	}
+	if((ir.kind == IssueKind.ENHANCEMENT)){
+		issuesCount["Enhancement"]<<1;
+	}
+	if((ir.kind == IssueKind.HELP_WANTED)){
+		issuesCount["Helpwanted"]<<1;
+	}
+	if((ir.kind == IssueKind.QUESTION)){
+		issuesCount["Questions"]<<1;
+	}
+	if((ir.kind == IssueKind.TASK)){
+	issuesCount["Task"]<<1;
+	}
+	if((ir.kind == IssueKind.INCOMPLETE)){
+		issuesCount["Incomplete"]<<1;
+	}
+	if((ir.kind == IssueKind.WORKSFORME)){
+		issuesCount["WorksForMe"]<<1;
+	}
+
+	}		
+});
+
