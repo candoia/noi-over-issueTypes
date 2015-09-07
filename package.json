@@ -1,7 +1,16 @@
 {
-  "name": "NOI_per_IssueType",
-  "version": "0.0.1",
-  "author": "Nitin Mukesh Tiwari",
-  "description": "Displays the number of issues per type as a pie chart.",
-  "main": "main.html"
+  "name": "noi-over-issueTypes",
+  "productName": "NOI over Issues",
+  "version": "0.1.0",
+  "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+  "description": "Displays Number of Issues per Issue type in Projects.",
+  "main": "main.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/candoia/noi-over-issueTypes"
+  },
+  "icon": {
+	"type": "fa",
+	"name": "pi-chart"
+  }
 }
